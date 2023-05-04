@@ -1,3 +1,11 @@
+@import url(./reset.css);
+@import url(./utils.css);
+
+@font-face {
+  font-family: 'Epilogue';
+  src: url(../fonts/Epilogue/Epilogue-VariableFont_wght.ttf) format('truetype');
+}
+
 :root {
   min-height: 100vh;
 
@@ -27,6 +35,3 @@
   --main-gap: 40px;
   --anim-time: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-@import url('./reset.css');
-@import url('./utils.css');
