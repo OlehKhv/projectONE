@@ -1,11 +1,18 @@
 /* Reset styles */
+body,
 h1,
 h2,
 h3,
 h4,
-h5,
-h6,
-p {
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
   margin: 0;
 }
 
@@ -13,9 +20,23 @@ p:last-child {
   margin-bottom: 0;
 }
 
-ul {
-  margin: 0;
+ul,
+ol,
+li,
+button {
   padding: 0;
+  background-color: transparent;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+}
+
+ul,
+ol {
   list-style: none;
 }
 
@@ -26,6 +47,8 @@ a {
 
 button {
   cursor: pointer;
+  border: none;
+  outline: none;
 }
 
 img {
