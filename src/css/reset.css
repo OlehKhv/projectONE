@@ -1,4 +1,13 @@
 /* Reset styles */
+body {
+  font-family: 'Epilogue', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+}
+
 body,
 h1,
 h2,
