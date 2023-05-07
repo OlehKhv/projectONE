@@ -1,0 +1,98 @@
+.sale-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.sale-title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: calc(40 / 32);
+    letter-spacing: -0.02em;
+    color: var(--color-black);
+    margin-bottom: 40px;
+}
+
+.sale-gallery {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.sale-gallery-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sale-gallery-list-item {
+    width: 80px;
+    height: 80px;
+    background-color: var(--color-black);
+}
+.sale-gallery-picture{display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 350px;
+    background-color: var(--color-black);}
+.sale-product-descriprion {display: flex; flex-direction: column; gap: 40px;}
+.sale-product-title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: calc(24 / 24);
+    letter-spacing: -0.02em;
+    color: var(--color-black);
+    margin-bottom: 8px;
+}
+
+.sale-product-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(18 / 14);
+    letter-spacing: -0.02em;
+    color: var(--color-black-50);
+    margin-bottom: 16px;
+}
+.sale-product-price1 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(24 / 18);
+    letter-spacing: -0.02em;
+    color: var(--color-black);
+    margin-right: 8px;
+}
+
+.sale-product-price2 {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: -0.02em;
+    text-decoration-line: line-through;
+    color: var(--color-black-50);
+}
+.sale-subtitle {position: relative;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(24 / 18);
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+margin-bottom: 17px;
+width: 100%;}
+.sale-subtitle::before {content: "";
+    border: 1px solid var(--color-black);
+    position: absolute;
+    top: -7px;
+    width: 100%;}
+.sale-subtitle::after {
+    content: "";
+    border: 1px solid var(--color-black);
+    position: absolute;
+    width: 16px;
+    top: 50%;
+right: 0;}
+.sale-text {font-weight: 400;
+    font-size: 14px;
+    line-height: calc(18 / 14);
+    letter-spacing: -0.01em;
+color: var(--color-black-50);}
