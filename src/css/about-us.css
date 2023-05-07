@@ -8,18 +8,14 @@
     font-size: 32px;
     line-height: calc(40/32);
     letter-spacing: -0.02em;
-    color: var(--color-black);
+    color: var(--color-dark-green)
 }
 
-.about-list {
+.about-inform {
     margin-bottom: 40px;
     padding: 0;
     align-items: left;
     list-style: none;
-}
-
-.about-item:not(:last-child) {
-    padding-bottom: 20px;
 }
 
 .about-text {
@@ -28,6 +24,10 @@
     line-height: calc(18/14);
     letter-spacing: -0.02em;
     color: var(--color-black);
+}
+
+.about-text:not(:last-child) {
+    padding-bottom: 20px;
 }
 
 .sample {
@@ -49,23 +49,21 @@
         line-height: calc(44/40);
     }
 
-    .about-list {
+    .about-inform {
         display: flex;
         margin-bottom: 0;
         gap: 20px;
-        padding: 0;
     }
 
-    .about-item {
-        display: flex;
+    .about-text {
         width: 220px;
     }
 
-    .about-item:last-child {
+    .about-text:last-child {
         width: 250px;
     }
 
-    .about-item:not(:last-child) {
+    .about-text:not(:last-child) {
         padding-bottom: 0;
     }
 
@@ -76,35 +74,29 @@
 }
 
 @media screen and (min-width: 1280px) {
-    .about-block {
-        display: flex;
-        margin-bottom: 40px;
-    }
-
     .about-title {
         margin-right: 110px;
     }
 
-    .about-list {
+    .about-inform {
         max-width: 859px;
         height: 90px;
-        display: flex;
-        justify-content: flex-end; 
         margin-right: 33px;
         gap: 40px;
-        padding: 0;
     }
-    .about-item {
+
+    .about-text {
         width: 439px;
     }
-    .about-item:last-child {
+
+    .about-text:last-child {
         width: 380px;
         margin-bottom: 33px;
     }
 
     .about-sample {
         display: flex;
-        justify-content: flex-end; 
+        justify-content: flex-end;
     }
 
     .sample {
