@@ -35,14 +35,8 @@
     height: 365px;
 }
 
-@media screen and (min-width: 375px) {
-    .container {
-        width: 375px;
-    }
-}
-
 @media screen and (min-width: 768px) {
-        .about-block {
+    .about-block {
         display: flex;
         margin-bottom: 40px;
     }
