@@ -1,0 +1,133 @@
+.catalog-title {
+  margin-bottom: 40px;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.catalog-link:is(:hover, :focus),
+.catalog-link:is(:hover, :focus) .catalog-overlay {
+  transform: translate(0, 0);
+}
+
+.catalog-item-overlay {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+.catalog-image-wrap {
+  width: 335px;
+  padding-top: 43px;
+  padding-bottom: 43px;
+  display: flex;
+  justify-content: center;
+}
+
+.catalog-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  transform: translate(0, 100%);
+  transition: transform var(--anim-time);
+
+  padding-top: 46px;
+  padding-left: 40px;
+  background-color: var(--color-darkgreen);
+  border-radius: 8px;
+}
+
+.overlay-caption {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: var(--color-white);
+}
+.overlay-text {
+  color: var(--color-white-50);
+  margin-bottom: 20px;
+}
+
+.catalog-item-info {
+  padding-top: 14px;
+}
+
+.catalog-item-price {
+  margin-top: 4px;
+}
+
+.order-button {
+  font-size: 12px;
+  line-height: 1.17;
+  min-width: 108px;
+  height: 42px;
+  margin-top: 40px;
+
+  display: block;
+  margin-left: auto;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--color-white);
+  background: var(--color-darkgreen);
+  border-radius: 8px;
+  border: transparent;
+  transition: border var(--anim-time);
+}
+
+.order-button:is(:hover, :focus) {
+  border: 1px solid #ffffff;
+}
+
+/** ===== ===== ===== ===== ===== ===== ===== @Media */
+
+@media screen and (max-width: 767px) {
+  .catalog-title {
+    font-size: 32px;
+    line-height: 1.25;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .catalog-item:nth-child(n + 9) {
+    display: none;
+  }
+}
+
+/** ===== ===== ===== ===== ===== ===== ===== min-width: 768px */
+
+@media screen and (min-width: 768px) {
+  .catalog-list {
+    gap: 40px 32px;
+  }
+  .catalog-image-wrap {
+    width: 336px;
+  }
+}
+
+/** ===== ===== ===== ===== ===== ===== ===== min-width: 1280px */
+
+@media screen and (min-width: 1280px) {
+  .catalog-title {
+    margin-bottom: 64px;
+  }
+  .catalog-list {
+    gap: 64px 24px;
+  }
+  .catalog-overlay {
+    padding-top: 26px;
+    padding-left: 20px;
+  }
+  .catalog-image-wrap {
+    width: 276px;
+    padding-top: 26px;
+    padding-bottom: 25px;
+  }
+  .order-button {
+    margin-top: 80px;
+  }
+}
