@@ -19,7 +19,7 @@
   overflow: hidden;
 }
 .catalog-image-wrap {
-  width: 335px;
+  max-width: 335px;
   padding-top: 43px;
   padding-bottom: 43px;
   display: flex;
@@ -56,6 +56,12 @@
   padding-top: 14px;
 }
 
+.catalog-item-name {
+  width: 276px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 .catalog-item-price {
   margin-top: 4px;
 }
@@ -105,7 +111,7 @@
     gap: 40px 32px;
   }
   .catalog-image-wrap {
-    width: 336px;
+    max-width: 336px;
   }
 }
 
