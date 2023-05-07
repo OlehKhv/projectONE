@@ -56,6 +56,12 @@
   padding-top: 14px;
 }
 
+.catalog-item-name {
+  width: 276px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 .catalog-item-price {
   margin-top: 4px;
 }
