@@ -96,3 +96,16 @@ right: 0;}
     line-height: calc(18 / 14);
     letter-spacing: -0.01em;
 color: var(--color-black-50);}
+
+@media screen and (min-width: 375px) {
+.container {width: 375px;}   
+}
+
+@media screen and (max-width: 768px) {
+.container {width: 768px;}
+/* .sale-gallery-list-item {width: 146px;
+height: 146px;} */
+/* .sale-gallery-picture {width: 406px;
+    height: 614px;} */
+    
+}
