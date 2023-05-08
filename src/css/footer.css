@@ -1,14 +1,26 @@
 .footer {
   background-color: var(--color-darkgreen);
-}
-.navigation {
   color: var(--color-white);
 }
-.logo-mob {
+.footer-container {
   display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.footer-wrap {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
-.menu {
+.footer-address {
+  max-width: 136px;
+}
+.footer-navigation {
+  display: flex;
+  flex-direction: column;
+}
+.footer-menu {
   display: flex;
   flex-direction: column;
   align-items: end;
@@ -20,6 +32,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  margin-top: 40px;
   margin-bottom: 40px;
   gap: 20px;
   color: var(--color-white);
@@ -46,29 +59,74 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--anim-time);
 }
+
+.soc-link:hover,
+.soc-link:focus {
+  border: 1px solid var(--color-white);
+}
+
 .soc-icon {
   fill: var(--color-white);
 }
-
 .copyright {
   color: var(--color-copyright);
+  font-size: 12px;
+  line-height: 1.17px;
 }
 .agreement {
   display: flex;
   gap: 14px;
   margin-top: 14px;
 }
-/* @media screen and (min-width: 768px) {
-   .footer {
+@media screen and (min-width: 768px) {
+  .footer {
     max-width: 768px;
   }
+
+  .footer-logo {
+    width: 50px;
+    height: 50px;
+  }
+  .footer-container {
+    padding-top: 16px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+  }
+
+  .footer-address {
+    max-width: 181px;
+  }
+
+  .footer-wrap {
+    justify-content: space-between;
+  }
+
   .footer-tablet {
     flex-wrap: wrap;
   }
+
+  .copyright {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    gap: 18px;
+    margin-bottom: -40px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29px;
+    letter-spacing: -0.02em;
+  }
+
+  .agreement {
+    margin-top: 0;
+  }
 }
+
 @media screen and (min-width: 1280px) {
-} */
+}
