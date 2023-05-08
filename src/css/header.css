@@ -15,6 +15,11 @@
   display: flex;
   align-items: center;
 }
+
+.icon-logoheader-mob {
+  margin-right: 4px;
+}
+
 .header-logo-text {
   font-size: 12px;
   line-height: 1;
