@@ -107,7 +107,7 @@
 }
 
 .sale-subtitle::after {
-  content: '\1F7A5';
+  content: '\271A';
   position: absolute;
   right: 0;
 }
