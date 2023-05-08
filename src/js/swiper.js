@@ -1,4 +1,5 @@
-const swiper = new Swiper('.mySwiper', {
+(() => {
+  const swiper = new Swiper('.mySwiper', {
   slidesPerView: 1,
   spaceBetween: 10,
   loop: true,
@@ -8,5 +9,13 @@ const swiper = new Swiper('.mySwiper', {
   navigation: {
     nextEl: '.button-next',
     prevEl: '.button-prev',
-  },
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'fraction',
+    }
 });
+})();
+
+     
+    

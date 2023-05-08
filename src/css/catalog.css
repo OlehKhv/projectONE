@@ -88,13 +88,34 @@
 .order-button:is(:hover, :focus) {
   border: 1px solid #ffffff;
 }
+.catalog-like-btn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.catalog-like-icon {
+  stroke: var(--color-black-10);
+  fill: transparent;
+}
+
+.heart {
+  display: none;
+}
 /** ===== ===== ===== ===== ===== ===== ===== @Media */
 
 @media screen and (max-width: 767px) {
   .catalog-title {
     font-size: 32px;
     line-height: 1.25;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1279px) {
+  .heart {
+    display: unset;
   }
 }
 
@@ -112,6 +133,11 @@
   }
   .catalog-image-wrap {
     max-width: 336px;
+  }
+
+  .order-button {
+    min-width: 122px;
+    height: 50px;
   }
 }
 
