@@ -5,8 +5,7 @@
   width: 100%;
   height: 100%;
   background: var(--color-balck-40, rgba(46, 47, 66, 0.4));
-  opacity: 1;
-  transition: opacity 250ms linear, visibility 250ms linear;
+  transition: opacity var(--anim-time), visibility var(--anim-time);
 }
 .modal {
   position: absolute;
@@ -20,6 +19,11 @@
   justify-content: space-between;
   padding: 40px 20px;
   overflow: auto;
+  transition: transform var(--anim-time);
+  transform: scale(1);
+}
+.backdrop.is-hidden .modal {
+  transform: scale(1.2);
 }
 .modal-btn {
   position: absolute;
@@ -135,6 +139,9 @@
     flex-direction: row;
     padding: 40px;
     gap: 20px;
+  }
+  .backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(1.2);
   }
   .modal-btn {
     top: 20px;

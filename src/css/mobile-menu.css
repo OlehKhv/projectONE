@@ -7,6 +7,11 @@
   height: 100vh;
   background: var(--color-darkgreen, #1e2827);
   padding: 29px 20px;
+  transition: transform var(--anim-time), opacity var(--anim-time),
+    visibility var(--anim-time);
+}
+.mobile-menu.is-hidden {
+  transform: translateX(100%);
 }
 .mobile-container {
   display: flex;
