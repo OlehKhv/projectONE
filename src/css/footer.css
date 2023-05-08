@@ -15,7 +15,6 @@
 }
 .footer-address {
   max-width: 136px;
-  /* margin-right: auto; */
 }
 .footer-navigation {
   display: flex;
@@ -71,9 +70,6 @@
   color: var(--color-copyright);
   font-size: 12px;
   line-height: 1.17px;
-  /* identical to box height, or 117% */
-
-  /* letter-spacing: -0.02em; */
 }
 .agreement {
   display: flex;
@@ -91,19 +87,13 @@
     font-size: 18px;
     line-height: 1.33;
     letter-spacing: -0.02em;
-
-    /* padding-bottom: 20px; */
   }
   .footer-address {
     max-width: 181px;
   }
-  /* .menu {
-    margin-left: 267px;
-  } */
+
   .footer-wrap {
     justify-content: space-between;
-  }
-  .descr {
   }
 
   .copyright {
@@ -116,7 +106,6 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 1.29px;
-    /* identical to box height, or 129% */
 
     letter-spacing: -0.02em;
   }
