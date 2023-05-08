@@ -1,67 +1,62 @@
 .mobile-menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    width: 100vw;
-    height: 100vh;
-    background: #1E2827;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  background: var(--color-darkgreen, #1e2827);
+  padding: 29px 20px;
+}
+.mobile-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+}
+.mobile-logo.link {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  height: 100%;
 }
 .mobile-logo-text {
-    font-size: 12px;
-    line-height: 1;
-    letter-spacing: -0.03em;
-    color: #ffffff;
-}
-.mobile-container{
-    display: flex;
-    align-items: center;
-    padding: 29px 20px 0px;
-    gap: 4px;
-    
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: var(--color-white, #ffffff);
 }
 .mobile-menu-close-btn {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 22px;
-    right: 12px;
-    /* background: #FFFFFF; */
-    margin-left: auto;
-    width: 24px;
-    height: 24px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
 }
 
-.modal-close-icon {
-    width: 24px;
-    height: 24px;
-    stroke: #FFFFFF;
+.mobil-close-icon {
+  stroke: var(--color-white, #ffffff);
 }
 
 .mobile-navigation {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 200px;
+  padding-top: 200px;
 }
 
 .mobile-item {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 14px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 14px;
 }
 
 .mobile-list {
-    font-family: 'Epilogue';
-    font-size: 14px;
-    line-height:calc(18/14);
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
+  font-family: 'Epilogue';
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
 }
 
-.mobile-link{
-    color: #ffffff;
+.mobile-link {
+  color: var(--color-white, #ffffff);
 }
