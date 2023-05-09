@@ -38,6 +38,8 @@
     font-size: 40px;
     line-height: 1.1;
 
+    color: var(--color-darkgreen);
+
     width: 448px;
   }
 
