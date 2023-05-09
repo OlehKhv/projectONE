@@ -26,18 +26,14 @@
 .footer-contacts {
   color: var(--color-white);
 }
-.footer-contacts,
-.footer-menu,
+
+.footer-text:is(:hover, :focus),
 .agreement-item:is(:hover, :focus) {
   border: 1px solid var(--color-white);
   border-radius: 4px;
-}
-
-.footer-contacts,
-.footer-menu,
-.agreement:is(:hover, :focus) {
   transition: var(--anim-time);
 }
+
 .footer-tel {
   margin-bottom: 20px;
 }
