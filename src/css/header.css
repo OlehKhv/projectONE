@@ -57,16 +57,16 @@
     margin-right: 4px;
   }
   .header-logo-text {
-    margin-right: 80px;
+    margin-right: 76px;
     font-size: 15px;
   }
   .header-list {
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 32px;
   }
   .header-link {
-    padding: 2px;
+    padding: 4px;
     font-size: 9px;
     line-height: 1.33;
     text-align: center;
