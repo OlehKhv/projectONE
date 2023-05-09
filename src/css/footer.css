@@ -26,7 +26,8 @@
 }
 
 .footer-link,
-.copyright-link {
+.copyright-link,
+.footer-address-item {
   border: 1px solid transparent;
   border-radius: 4px;
   transition: var(--anim-time);
@@ -34,7 +35,8 @@
 }
 
 .footer-link:is(:hover, :focus),
-.copyright-link:is(:hover, :focus) {
+.copyright-link:is(:hover, :focus),
+.footer-address-item:is(:hover, :focus) {
   border: 1px solid var(--color-white);
 }
 
