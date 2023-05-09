@@ -39,6 +39,7 @@
     line-height: 1.1;
 
     width: 448px;
+    color: var(--color-darkgreen);
   }
 
   .new-watches-list {
