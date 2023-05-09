@@ -13,7 +13,7 @@
 @font-face {
   font-family: 'Epilogue';
   src: url(../fonts/Epilogue/Epilogue-VariableFont_wght.ttf) format('truetype');
-  font-display: swap;
+  font-display: auto;
 }
 
 :root {
@@ -25,7 +25,6 @@
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
-  font-display: swap;
 
   color: #141414;
   background-color: #fbfbfb;
