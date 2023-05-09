@@ -10,6 +10,7 @@
     visibility var(--anim-time);
   padding-top: 29px;
   padding-bottom: 29px;
+  overflow: auto;
 }
 .mobile-menu.is-hidden {
   transform: translateX(100%);
