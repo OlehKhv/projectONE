@@ -13,7 +13,7 @@
 @font-face {
   font-family: 'Epilogue';
   src: url(../fonts/Epilogue/Epilogue-VariableFont_wght.ttf) format('truetype');
-  font-display: auto;
+  font-display: fallback;
 }
 
 :root {
