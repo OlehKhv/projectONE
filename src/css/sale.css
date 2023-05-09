@@ -96,6 +96,7 @@
   text-transform: uppercase;
   margin-bottom: 17px;
   width: 100%;
+  display: block;
 }
 
 .sale-subtitle::before {
@@ -112,11 +113,11 @@
   right: 0;
 }
 
-.check-none-descriprion:checked + label > .sale-subtitle::after {
+.check-none-descriprion:checked + .sale-subtitle::after {
   content: '\2594';
   top: 25%;
 }
-.check-none-details:checked + label > .sale-subtitle::after {
+.check-none-details:checked + .sale-subtitle::after {
   content: '\2594';
   top: 25%;
 }
