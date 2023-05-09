@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: var(--color-balck-40, rgba(46, 47, 66, 0.4));
+  background: var(--color-black-40, rgba(20, 20, 20, 0.4));
   transition: opacity var(--anim-time), visibility var(--anim-time);
 }
 .modal {
@@ -34,13 +34,20 @@
   align-items: center;
   width: 20px;
   height: 20px;
+  transition: border var(--anim-time);
 }
+
+.modal-btn:is(:hover, :focus) {
+  border: 1px solid var(--color-black, #141414);
+  border-radius: 50%;
+}
+
 .modal-close-icon {
   display: none;
-  stroke: var(--color-balck, #141414);
+  stroke: var(--color-black, #141414);
 }
 .modal-close-icon-mob {
-  stroke: var(--color-balck, #141414);
+  stroke: var(--color-black, #141414);
 }
 .modal-card {
   flex-basis: 276px;
@@ -80,7 +87,7 @@
 }
 .modal-input {
   padding: 12px 16px;
-  border: 1px solid var(--color-balck-50, rgba(46, 47, 66, 0.5));
+  border: 1px solid var(--color-black-50, rgba(20, 20, 20, 0.5));
   border-radius: 8px;
   width: 100%;
   height: 42px;
@@ -89,7 +96,7 @@
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
-  color: var(--color-balck-50, rgba(20, 20, 20, 0.5));
+  color: var(--color-black-50, rgba(20, 20, 20, 0.5));
 }
 .label-textarea-wrap {
   width: 100%;
@@ -99,7 +106,7 @@
   padding: 12px 16px;
   resize: none;
   height: 170px;
-  border: 1px solid var(--color-balck-50, rgba(46, 47, 66, 0.5));
+  border: 1px solid var(--color-black-50, rgba(20, 20, 20, 0.5));
   border-radius: 8px;
   width: 100%;
 }
@@ -107,18 +114,25 @@
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
-  color: var(--color-balck-50, rgba(20, 20, 20, 0.5));
+  color: var(--color-black-50, rgba(20, 20, 20, 0.5));
 }
 .modal-form-btn {
   padding: 18px;
+  height: 50px;
   background: var(--color-darkgreen, #1e2827);
   color: var(--color-white, #ffffff);
   border-radius: 8px;
   width: 100%;
   margin-bottom: 12px;
+  transition: box-shadow var(--anim-time);
 }
+
+.modal-form-btn:is(:hover, :focus) {
+  box-shadow: 0px 2px 8px var(--color-black-40, rgba(20, 20, 20, 0.4));
+}
+
 .modal-privacy-policy {
-  color: var(--color-balck-40, rgba(46, 47, 66, 0.4));
+  color: var(--color-black-40, rgba(20, 20, 20, 0.4));
 }
 .modal-privacy-wrap {
   width: 100%;
