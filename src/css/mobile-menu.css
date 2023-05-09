@@ -39,7 +39,8 @@
   width: 24px;
   height: 24px;
   border-radius: 4px;
-  transition: border var(--anim-time);
+  border: 1px solid transparent;
+  transition: var(--anim-time);
 }
 
 .mobile-menu-close-btn:is(:hover, :focus) {
@@ -72,8 +73,9 @@
 .mobile-link {
   color: var(--color-white, #ffffff);
   padding: 4px;
+  border: 1px solid transparent;
   border-radius: 4px;
-  transition: border var(--anim-time);
+  transition: var(--anim-time);
 }
 
 .mobile-link:is(:hover, :focus) {
