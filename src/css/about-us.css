@@ -34,6 +34,10 @@
   height: 365px;
 }
 
+.sample.video {
+  display: none;
+}
+
 .red-text {
   color: #ff0000;
   font-size: 18px;
@@ -76,6 +80,14 @@
   .sample {
     width: 704px;
     height: 465px;
+  }
+
+  .sample.video {
+    display: unset;
+  }
+
+  .sample.video-mob {
+    display: none;
   }
 }
 
