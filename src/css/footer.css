@@ -6,12 +6,12 @@
 .footer-wrap {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px 136px;
   margin-bottom: 80px;
 }
 
 .footer-address {
   width: 141px;
+  margin-right: auto;
 }
 
 .footer-logo {
@@ -114,6 +114,10 @@
     font-size: 14px;
     line-height: 1.29;
   }
+
+  .footer-soc-list {
+    margin-top: 40px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -122,15 +126,8 @@
     height: 50px;
   }
 
-  .footer-wrap {
-    gap: unset;
-  }
-
   .footer-address {
     width: 181px;
-  }
-
-  .footer-address {
     margin-right: 136px;
   }
 
